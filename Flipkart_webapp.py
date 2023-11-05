@@ -3,9 +3,9 @@ import pandas as pd
 import streamlit as st
 import joblib
 import sklearn
-model = joblib.load('C:/Users/soppoju narender/Desktop/FS-DataScience/NLP/Sentiment_analysis_on_flipkart/flipkart_sentiment_model.pkl')
+model = joblib.load('flipkart_sentiment_model.pkl')
 
-tfidi = joblib.load('C:/Users/soppoju narender/Desktop/FS-DataScience/NLP/Sentiment_analysis_on_flipkart/tfidf_vectorizer_flipkart_data.pkl')
+tfidi = joblib.load('tfidf_vectorizer_flipkart_data.pkl')
 
 def analysis(input_text):
     input_data_features = tfidi.transform(input_text)
